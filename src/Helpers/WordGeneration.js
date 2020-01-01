@@ -1,3 +1,5 @@
+import wordPairsCategorized from './WordPairs';
+
 function shuffle(array) {
   const _array = array.slice(0);
   for(let i = 0; i < array.length - 1; i++) {
@@ -10,48 +12,7 @@ function shuffle(array) {
   return _array;
 }
 
-const words = [
-  {
-    'deutsch': 'heiß',
-    'english': 'hot',
-    'translationId': 0,
-  },
-  {
-    'deutsch': 'kalt',
-    'english': 'cold',
-    'translationId': 1,
-  },
-  {
-    'deutsch': 'höflich',
-    'english': 'polite',
-    'translationId': 2,
-  },
-  {
-    'deutsch': 'reif',
-    'english': 'mature',
-    'translationId': 3,
-  },
-  {
-    'deutsch': 'niedlich',
-    'english': 'cute',
-    'translationId': 4,
-  },
-  {
-    'deutsch': 'teuer',
-    'english': 'expensive',
-    'translationId': 5,
-  },
-  {
-    'deutsch': 'breit',
-    'english': 'wide',
-    'translationId': 6,
-  },
-  {
-    'deutsch': 'besorgt',
-    'english': 'worried',
-    'translationId': 7,
-  },
-];
+const words = [].concat.apply([], wordPairsCategorized).slice(0, 13);
 
 function generateWords() {
   let id = 0;
