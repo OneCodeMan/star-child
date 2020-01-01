@@ -35,13 +35,16 @@ function Main() {
       setSelected([id]);
       setDisabled(false);
     } else {
-      if (sameWordClicked(id)) return;
+      if (sameWordClicked(id))  {
+        resetWords();
+        return;
+      }
       setSelected([selected[0], id]);
       if (isMatch(id)) {
         setSolved([...solved, selected[0], id]);
         resetWords();
       } else {
-        setTimeout(resetWords, 2000);
+        setTimeout(resetWords, 1000);
       }
     }
   };

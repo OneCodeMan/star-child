@@ -16,11 +16,11 @@ const Word = ({
 }) => (
 
   <div
-    className={`word-container ${selected ? 'selected' : ''}`}
+    className={`word-container ${selected ? 'selected' : ''} ${solved ? 'solved' : ''}`}
     style={{ width, height }}
     onClick={() => disabled ? null : handleClick(id)}
   >
-    <p className={solved ? 'solved' : ''}>{value}</p>
+    <p className="value">{value}</p>
   </div>
 
 );

@@ -36,6 +36,21 @@ const words = [
     'english': 'cute',
     'translationId': 4,
   },
+  {
+    'deutsch': 'teuer',
+    'english': 'expensive',
+    'translationId': 5,
+  },
+  {
+    'deutsch': 'breit',
+    'english': 'wide',
+    'translationId': 6,
+  },
+  {
+    'deutsch': 'besorgt',
+    'english': 'worried',
+    'translationId': 7,
+  },
 ];
 
 function generateWords() {

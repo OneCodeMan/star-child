@@ -1,3 +1,24 @@
+.word-container {
+  border: 1px solid;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+  max-height: 40px;
+  border-radius: 5px;
+  display: table; /* centers text vertically */
+  cursor: pointer;
+}
+
 p {
   font-family: "Lucida Console", Monaco, monospace;
+}
+
+/* selected state */
+.selected {
+  background: blue;
+}
+
+/* solved state */
+.solved {
+  background: gray;
 }
