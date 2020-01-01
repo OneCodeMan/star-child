@@ -45,8 +45,8 @@ function Main() {
       setSelected([selected[0], id]);
       if (isMatch(id)) {
         setSolved([...solved, selected[0], id]);
-        setSolvedAnim([selected[0], id]);
         setTimeout(solveAnimation, 1000);
+        setSolvedAnim([selected[0], id]);
         resetWords();
       } else {
         setWrongPairAnim([selected[0], id]);

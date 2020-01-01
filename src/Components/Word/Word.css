@@ -7,6 +7,10 @@
   border-radius: 5px;
   display: table; /* centers text vertically */
   cursor: pointer;
+
+  -webkit-box-shadow: 0px 10px 11px 0px rgba(199,199,199,1);
+  -moz-box-shadow: 0px 10px 11px 0px rgba(199,199,199,1);
+  box-shadow: 0px 10px 11px 0px rgba(199,199,199,1);
 }
 
 p {
@@ -15,18 +19,24 @@ p {
 
 /* selected state */
 .selected {
-  background: blue;
+  background: #38AECC;
+  box-shadow: 0px 10px 11px 0px #38AECC;
 }
 
 .wrongPairAnim {
-  background: red;
+  background: #A71D31;
+  box-shadow: 0px 10px 11px 0px #A71D31;
 }
 
 /* solved state */
 .solved {
-  background: gray;
+  background: #CECECE;
+  box-shadow: 0px 10px 11px 0px #CECECE;
+  opacity: 0.5;
 }
 
 .solvedAnim {
-  background: green;
+  background: #6DECAF;
+  box-shadow: 0px 10px 11px 0px #6DECAF;
+  opacity: 1;
 }
