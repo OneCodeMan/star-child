@@ -56,7 +56,7 @@ function Main() {
   const isMatch = (id) => {
     const firstWord = words.find((word) => word.id === id);
     const secondWord = words.find((word) => selected[0] === word.id);
-    return secondWord.value === firstWord.value;
+    return secondWord.translationId === firstWord.translationId;
   }
 
   return (

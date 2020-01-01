@@ -13,23 +13,28 @@ function shuffle(array) {
 const words = [
   {
     'deutsch': 'heiß',
-    'english': 'hot'
+    'english': 'hot',
+    'translationId': 0,
   },
   {
     'deutsch': 'kalt',
-    'english': 'cold'
+    'english': 'cold',
+    'translationId': 1,
   },
   {
     'deutsch': 'höflich',
-    'english': 'polite'
+    'english': 'polite',
+    'translationId': 2,
   },
   {
     'deutsch': 'reif',
-    'english': 'mature'
+    'english': 'mature',
+    'translationId': 3,
   },
   {
     'deutsch': 'niedlich',
-    'english': 'cute'
+    'english': 'cute',
+    'translationId': 4,
   },
 ];
 
@@ -39,13 +44,15 @@ function generateWords() {
     acc.push({
       id: id++,
       value: value.deutsch,
+      translationId: value.translationId
     });
 
     acc.push({
       id: id++,
       value: value.english,
+      translationId: value.translationId
     });
-    
+
     return acc;
   }, [])
 

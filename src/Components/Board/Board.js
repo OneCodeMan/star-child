@@ -18,6 +18,7 @@ const Board = ({
         <Word
           key={word.id}
           id={word.id}
+          translationId={word.translationId}
           value={word.value}
           width={dimension / 4.5}
           height={dimension / 4.5}

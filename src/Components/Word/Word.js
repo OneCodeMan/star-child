@@ -6,6 +6,7 @@ import './Word.css';
 const Word = ({
   handleClick,
   id,
+  translationId,
   value,
   selected,
   width,
@@ -25,8 +26,9 @@ const Word = ({
 );
 
 Word.propTypes = {
-  handleClick: PropTypes.bool.isRequired,
+  handleClick: PropTypes.func.isRequired,
   id: PropTypes.number.isRequired,
+  translationId: PropTypes.number.isRequired,
   selected: PropTypes.bool.isRequired,
   solved: PropTypes.bool.isRequired,
   value: PropTypes.string.isRequired,
