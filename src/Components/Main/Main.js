@@ -19,18 +19,18 @@ function Main() {
     setWords(generateWords());
   }, []);
 
-  useEffect(() => {
-    const resizeListener = window.addEventListener('resize', resizeBoard);
-
-    return () => window.removeEventListener('resize', resizeListener);
-  });
-
-  const resizeBoard = () => {
-    setDimension(Math.min(
-      document.documentElement.clientWidth,
-      document.documentElement.clientHeight,
-    ))
-  };
+  // useEffect(() => {
+  //   const resizeListener = window.addEventListener('resize', resizeBoard);
+  //
+  //   return () => window.removeEventListener('resize', resizeListener);
+  // });
+  //
+  // const resizeBoard = () => {
+  //   setDimension(Math.min(
+  //     document.documentElement.clientWidth,
+  //     document.documentElement.clientHeight,
+  //   ))
+  // };
 
   const handleClick = (id) => {
     setDisabled(true);

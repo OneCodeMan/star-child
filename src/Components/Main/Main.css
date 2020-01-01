@@ -1,3 +1,36 @@
 .Main {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.Main h2 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #52489C;
+  font-size: 40px;
+}
+
+/* .Main h2 {
+  font-family: monospace;
+  color: #52489C;
+  font-weight: 700em;
+  font-size: 30px;
+  overflow: hidden;
+  border-right: .15em solid gray;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret 1.5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 20%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: gray; }
+} */
