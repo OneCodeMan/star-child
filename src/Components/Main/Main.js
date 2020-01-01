@@ -5,8 +5,15 @@ import Board from '../Board/Board';
 import GameOver from '../GameOver/GameOver';
 import generateWords from '../../Helpers/WordGeneration';
 
+const numWordsMap = {
+  'small': 5,
+  'medium': 8,
+  'large': 12
+};
+
 function Main() {
   const [words, setWords] = useState([]);
+  const [numWords, setNumWords] = useState(numWordsMap.medium);
   const [selected, setSelected] = useState([]);
   const [dimension, setDimension] = useState(400);
 
@@ -19,7 +26,7 @@ function Main() {
   const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
-    setWords(generateWords());
+    setWords(generateWords(numWords));
   }, []);
 
   // useEffect(() => {
