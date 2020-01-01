@@ -6,6 +6,7 @@ import GameOver from '../GameOver/GameOver';
 import generateWords from '../../Helpers/WordGeneration';
 
 const numWordsMap = {
+  'debug': 1,
   'small': 5,
   'medium': 8,
   'large': 12
@@ -13,7 +14,7 @@ const numWordsMap = {
 
 function Main() {
   const [words, setWords] = useState([]);
-  const [numWords, setNumWords] = useState(numWordsMap.medium);
+  const [numWords, setNumWords] = useState(numWordsMap.debug);
   const [selected, setSelected] = useState([]);
   const [dimension, setDimension] = useState(400);
 
@@ -101,8 +102,13 @@ function Main() {
     setSolved([]);
   };
 
-  const handleGameOverClick = () => {
+  const handlePlayAgainClick = () => {
     setGameOver(false);
+    setWords(generateWords(numWords));
+  };
+
+  const handleSelection = (value) => {
+    setNumWords(numWordsMap[value]);
   };
 
   return (
@@ -119,7 +125,10 @@ function Main() {
           solvedAnim={solvedAnim}
           handleClick={handleClick}
           disabled={disabled}
-        /> : <GameOver handleGameOverClick={handleGameOverClick}/>
+        /> : <GameOver
+                handlePlayAgainClick={handlePlayAgainClick}
+                handleSelection={handleSelection}
+             />
       }
     </div>
   );

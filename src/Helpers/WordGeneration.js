@@ -12,10 +12,10 @@ function shuffle(array) {
   return _array;
 }
 
-const allWords = [].concat.apply([], wordPairsCategorized);
+const allWords = [].concat.apply([], Object.values(wordPairsCategorized));
 
 function generateWords(quantity) {
-  let words = allWords.slice(0, quantity);
+  let words = shuffle(allWords).slice(0, quantity);
   let id = 0;
   const newWords = words.reduce((acc, value) => {
     acc.push({

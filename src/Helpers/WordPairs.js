@@ -170,6 +170,10 @@ const conjunctions = [
   },
 ];
 
-const wordPairsCategorized = [adjectives, verbs, conjunctions];
+const wordPairsCategorized =  {
+  'adjectives': adjectives,
+  'verbs': verbs,
+  'conjunctions': conjunctions
+};
 
 export default wordPairsCategorized;
