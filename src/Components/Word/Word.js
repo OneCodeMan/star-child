@@ -9,14 +9,18 @@ const Word = ({
   translationId,
   value,
   selected,
+  wrongPairAnim,
   width,
   height,
   solved,
+  solvedAnim,
   disabled
 }) => (
 
   <div
-    className={`word-container ${selected ? 'selected' : ''} ${solved ? 'solved' : ''}`}
+    className={`word-container ${selected ? 'selected' : ''} ${solved ? 'solved' : ''}
+                               ${solvedAnim ? 'solvedAnim' : ''}
+                               ${wrongPairAnim ? 'wrongPairAnim' : ''}`}
     style={{ width, height }}
     onClick={() => disabled ? null : handleClick(id)}
   >

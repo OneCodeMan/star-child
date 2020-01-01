@@ -10,7 +10,9 @@ const Board = ({
   handleClick,
   disabled,
   selected,
-  solved
+  wrongPairAnim,
+  solved,
+  solvedAnim
 }) => (
   <div className="board">
     {
@@ -23,7 +25,9 @@ const Board = ({
           width={dimension / 4.5}
           height={dimension / 5}
           selected={selected.includes(word.id)}
+          wrongPairAnim={wrongPairAnim.includes(word.id)}
           solved={solved.includes(word.id)}
+          solvedAnim={solvedAnim.includes(word.id)}
           handleClick={handleClick}
           disabled={disabled || solved.includes(word.id)}
         />

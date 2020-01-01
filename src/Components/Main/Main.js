@@ -12,6 +12,9 @@ function Main() {
   const [solved, setSolved] = useState([]);
   const [disabled, setDisabled] = useState(false);
 
+  const [solvedAnim, setSolvedAnim] = useState([]);
+  const [wrongPairAnim, setWrongPairAnim] = useState([]);
+
   useEffect(() => {
     setWords(generateWords());
   }, []);
@@ -42,8 +45,12 @@ function Main() {
       setSelected([selected[0], id]);
       if (isMatch(id)) {
         setSolved([...solved, selected[0], id]);
+        setSolvedAnim([selected[0], id]);
+        setTimeout(solveAnimation, 1000);
         resetWords();
       } else {
+        setWrongPairAnim([selected[0], id]);
+        setTimeout(wrongPairAnimation, 1000);
         setTimeout(resetWords, 1000);
       }
     }
@@ -52,6 +59,14 @@ function Main() {
   const resetWords = () => {
     setSelected([]);
     setDisabled(false);
+  };
+
+  const solveAnimation = () => {
+    setSolvedAnim([]);
+  };
+
+  const wrongPairAnimation = () => {
+    setWrongPairAnim([]);
   };
 
   const sameWordClicked = (id) => selected.includes(id);
@@ -69,7 +84,9 @@ function Main() {
         dimension={dimension}
         words={words}
         selected={selected}
+        wrongPairAnim={wrongPairAnim}
         solved={solved}
+        solvedAnim={solvedAnim}
         handleClick={handleClick}
         disabled={disabled}
       />

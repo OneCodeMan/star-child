@@ -18,7 +18,15 @@ p {
   background: blue;
 }
 
+.wrongPairAnim {
+  background: red;
+}
+
 /* solved state */
 .solved {
   background: gray;
+}
+
+.solvedAnim {
+  background: green;
 }
