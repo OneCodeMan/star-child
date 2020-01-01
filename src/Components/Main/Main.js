@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Main.css';
 
 import Board from '../Board/Board';
+import GameOver from '../GameOver/GameOver';
 import generateWords from '../../Helpers/WordGeneration';
 
 function Main() {
@@ -14,6 +15,8 @@ function Main() {
 
   const [solvedAnim, setSolvedAnim] = useState([]);
   const [wrongPairAnim, setWrongPairAnim] = useState([]);
+
+  const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
     setWords(generateWords());
@@ -45,9 +48,10 @@ function Main() {
       setSelected([selected[0], id]);
       if (isMatch(id)) {
         setSolved([...solved, selected[0], id]);
-        setTimeout(solveAnimation, 1000);
         setSolvedAnim([selected[0], id]);
+        setTimeout(solveAnimation, 1000);
         resetWords();
+        setTimeout(checkGameOver, 1500);
       } else {
         setWrongPairAnim([selected[0], id]);
         setTimeout(wrongPairAnimation, 1000);
@@ -75,21 +79,41 @@ function Main() {
     const firstWord = words.find((word) => word.id === id);
     const secondWord = words.find((word) => selected[0] === word.id);
     return secondWord.translationId === firstWord.translationId;
-  }
+  };
+
+  const checkGameOver = () => {
+    // for some reason, solved's length isn't equal to words when you check.
+    // is it bc of hooks asynchronicity?
+    if (solved.length === (words.length - 2)) {
+      setGameOver(true);
+      setTimeout(resetGame, 1200);
+    };
+  };
+
+  const resetGame = () => {
+    setSolved([]);
+  };
+
+  const handleGameOverClick = () => {
+    setGameOver(false);
+  };
 
   return (
     <div className="Main">
       <h2>Test your German</h2>
-      <Board
-        dimension={dimension}
-        words={words}
-        selected={selected}
-        wrongPairAnim={wrongPairAnim}
-        solved={solved}
-        solvedAnim={solvedAnim}
-        handleClick={handleClick}
-        disabled={disabled}
-      />
+      {
+        !gameOver ?
+        <Board
+          dimension={dimension}
+          words={words}
+          selected={selected}
+          wrongPairAnim={wrongPairAnim}
+          solved={solved}
+          solvedAnim={solvedAnim}
+          handleClick={handleClick}
+          disabled={disabled}
+        /> : <GameOver handleGameOverClick={handleGameOverClick}/>
+      }
     </div>
   );
 }
