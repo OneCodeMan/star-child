@@ -42,7 +42,9 @@ Board.propTypes = {
   handleClick: PropTypes.func.isRequired,
   disabled: PropTypes.bool.isRequired,
   selected: PropTypes.arrayOf(PropTypes.number).isRequired,
+  solvedAnim: PropTypes.arrayOf(PropTypes.number).isRequired,
   solved: PropTypes.arrayOf(PropTypes.number).isRequired,
+  wrongPairAnim: PropTypes.arrayOf(PropTypes.number).isRequired,
 };
 
 export default Board;
