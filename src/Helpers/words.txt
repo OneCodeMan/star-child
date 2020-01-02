@@ -1,0 +1,18 @@
+heiß|hot|adjective
+kalt|cold|adjective
+höflich|polite|adjective
+reif|mature|adjective
+niedlich|cute|adjective
+teuer|expensive|adjective
+billig|cheap|adjective
+breit|wide|adjective
+essen|to eat|verb
+trinken|to drink|verb
+spielen|to play|verb
+treffen|to meet|verb
+vergessen|to forget|verb
+feiern|to celebrate|verb
+aber|but|conjunction
+oder|or|conjunction
+und|and|conjunction
+wo|where|conjunction
