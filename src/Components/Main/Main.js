@@ -97,7 +97,7 @@ function Main() {
     // is it bc of hooks asynchronicity?
     if (solved.length === (words.length - 2)) {
       setGameOver(true);
-      setTimeout(resetGame, 1200);
+      setTimeout(resetGame, 1000);
     };
   };
 
@@ -138,13 +138,14 @@ function Main() {
           disabled={disabled}
         /> :
         <div>
-          <GameOver
-            handlePlayAgainClick={handlePlayAgainClick}
-            disablePlayButton={disablePlayButton}
-          />
+          <h1>Gut gemacht! Wieder spielen?</h1>
           <GameSettings
             handleSizeSelection={handleSizeSelection}
             handleTypeSelection={handleTypeSelection}
+          />
+          <GameOver
+            handlePlayAgainClick={handlePlayAgainClick}
+            disablePlayButton={disablePlayButton}
           />
         </div>
       }

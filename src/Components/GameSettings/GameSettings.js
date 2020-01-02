@@ -10,10 +10,10 @@ const SettingHeading = ({ text }) => (
 const SizeSettings = ({ handleSizeSelection }) => (
   <div className="size-settings">
     <SettingHeading
-      text='Choose game size'
+      text='Wähle Spielgröße'
     />
-    <label>
-      Small
+  <label className="size-label">
+      <span>Klein</span>
       <input
         type="radio"
         name="size"
@@ -21,8 +21,8 @@ const SizeSettings = ({ handleSizeSelection }) => (
         onChange={() => handleSizeSelection('small')}
       />
     </label>
-    <label>
-      Medium
+    <label className="size-label">
+      <span>Mittel</span>
       <input
         type="radio"
         name="size"
@@ -30,8 +30,8 @@ const SizeSettings = ({ handleSizeSelection }) => (
         onChange={() => handleSizeSelection('medium')}
       />
     </label>
-    <label>
-      Large
+    <label className="size-label">
+      <span>Groß</span>
       <input
         type="radio"
         name="size"

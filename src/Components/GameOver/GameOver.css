@@ -1,5 +1,5 @@
-.game-over-container h1 {
-  font-size: 23px;
+.game-over-container {
+  margin: 30px;
 }
 
 .play-again-button {
@@ -16,5 +16,5 @@
 }
 
 .play-again-button:hover {
-  background-color: #94C9B9;
+  background-color: #BEE7B8;
 }

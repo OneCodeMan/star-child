@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.Main h1 {
+  font-size: 23px;
+}
+
 .Main h2 {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: #52489C;
