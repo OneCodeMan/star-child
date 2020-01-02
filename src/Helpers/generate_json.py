@@ -18,7 +18,7 @@ for word_raw in content:
 
         data['deutsch'] = word_values[0]
         data['english'] = word_values[1]
-        data['type'] = word_values[2]
+        data['type'] = word_values[2] if len(word_values) > 2 else 'other'
         data['category'] = word_values[3] if len(word_values) > 3 else 'none'
         data['translationId'] = id
         id += 1
