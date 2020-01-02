@@ -120,7 +120,7 @@ function Main() {
 
   return (
     <div className="Main">
-      <h2>Test your German</h2>
+      <h2>Test Your German</h2>
       {
         !gameOver ?
         <Board

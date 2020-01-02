@@ -1,8 +1,9 @@
 import React from 'react';
+import './GameSettings.css';
 
 const SettingHeading = ({ text }) => (
   <div className="settings-heading">
-    <h1>{text}</h1>
+    <h3>{text}</h3>
   </div>
 );
 
@@ -11,25 +12,34 @@ const SizeSettings = ({ handleSizeSelection }) => (
     <SettingHeading
       text='Choose game size'
     />
-    <input
-      type="radio"
-      name="size"
-      defaultChecked
-      value="small"
-      onChange={() => handleSizeSelection('small')}
-    /> Small
-    <input
-      type="radio"
-      name="size"
-      value="medium"
-      onChange={() => handleSizeSelection('medium')}
-    /> Medium
-    <input
-      type="radio"
-      name="size"
-      value="large"
-      onChange={() => handleSizeSelection('large')}
-    /> Large
+    <label>
+      Small
+      <input
+        type="radio"
+        name="size"
+        defaultChecked
+        value="small"
+        onChange={() => handleSizeSelection('small')}
+      />
+    </label>
+    <label>
+      Medium
+      <input
+        type="radio"
+        name="size"
+        value="medium"
+        onChange={() => handleSizeSelection('medium')}
+      />
+    </label>
+    <label>
+      Large
+      <input
+        type="radio"
+        name="size"
+        value="large"
+        onChange={() => handleSizeSelection('large')}
+      />
+    </label>
   </div>
 );
 

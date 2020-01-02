@@ -1,1 +1,20 @@
-/*TODO: style button*/
+.game-over-container h1 {
+  font-size: 23px;
+}
+
+.play-again-button {
+  width: 90px;
+  height: 40px;
+  padding: 5px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #94C9A9;
+  border-radius: 4px;
+}
+
+.play-again-button:hover {
+  background-color: #94C9B9;
+}
