@@ -15,7 +15,7 @@ const numWordsMap = {
 
 function Main() {
   const [words, setWords] = useState([]);
-  const [numWords, setNumWords] = useState(numWordsMap.debug);
+  const [numWords, setNumWords] = useState(numWordsMap.small);
   const [wordTypes, setWordTypes] = useState(['adjectives', 'nouns', 'verbs']); // future
   const [selected, setSelected] = useState([]);
   const [dimension, setDimension] = useState(400);
@@ -27,10 +27,11 @@ function Main() {
   const [wrongPairAnim, setWrongPairAnim] = useState([]);
 
   const [gameOver, setGameOver] = useState(false);
+  const [disablePlayButton, setDisablePlayButton] = useState(true);
 
   useEffect(() => {
     setWords(generateWords(numWords));
-  }, []);
+  }, [numWords]);
 
   // useEffect(() => {
   //   const resizeListener = window.addEventListener('resize', resizeBoard);
@@ -102,6 +103,8 @@ function Main() {
 
   const resetGame = () => {
     setSolved([]);
+    setNumWords();
+    setDisablePlayButton(true);
   };
 
   const handlePlayAgainClick = () => {
@@ -111,6 +114,7 @@ function Main() {
 
   const handleSizeSelection = (value) => {
     setNumWords(numWordsMap[value]);
+    setDisablePlayButton(false);
   };
 
   // for the future!
@@ -136,6 +140,7 @@ function Main() {
         <div>
           <GameOver
             handlePlayAgainClick={handlePlayAgainClick}
+            disablePlayButton={disablePlayButton}
           />
           <GameSettings
             handleSizeSelection={handleSizeSelection}

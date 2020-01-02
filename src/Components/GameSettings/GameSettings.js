@@ -17,7 +17,6 @@ const SizeSettings = ({ handleSizeSelection }) => (
       <input
         type="radio"
         name="size"
-        defaultChecked
         value="small"
         onChange={() => handleSizeSelection('small')}
       />
