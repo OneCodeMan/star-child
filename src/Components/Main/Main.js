@@ -3,6 +3,7 @@ import './Main.css';
 
 import Board from '../Board/Board';
 import GameOver from '../GameOver/GameOver';
+import GameSettings from '../GameSettings/GameSettings';
 import generateWords from '../../Helpers/WordGeneration';
 
 const numWordsMap = {
@@ -15,6 +16,7 @@ const numWordsMap = {
 function Main() {
   const [words, setWords] = useState([]);
   const [numWords, setNumWords] = useState(numWordsMap.debug);
+  const [wordTypes, setWordTypes] = useState(['adjectives', 'nouns', 'verbs']); // future
   const [selected, setSelected] = useState([]);
   const [dimension, setDimension] = useState(400);
 
@@ -107,8 +109,13 @@ function Main() {
     setWords(generateWords(numWords));
   };
 
-  const handleSelection = (value) => {
+  const handleSizeSelection = (value) => {
     setNumWords(numWordsMap[value]);
+  };
+
+  // for the future!
+  const handleTypeSelection = (value) => {
+    alert(value);
   };
 
   return (
@@ -125,10 +132,16 @@ function Main() {
           solvedAnim={solvedAnim}
           handleClick={handleClick}
           disabled={disabled}
-        /> : <GameOver
-                handlePlayAgainClick={handlePlayAgainClick}
-                handleSelection={handleSelection}
-             />
+        /> :
+        <div>
+          <GameOver
+            handlePlayAgainClick={handlePlayAgainClick}
+          />
+          <GameSettings
+            handleSizeSelection={handleSizeSelection}
+            handleTypeSelection={handleTypeSelection}
+          />
+        </div>
       }
     </div>
   );
