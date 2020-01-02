@@ -1,3 +1,143 @@
+# animal nouns
+das Tier|animal|noun|animals
+die Schildkröte|turtle|noun|animals
+der Seestern|starfish|noun|animals
+der Alligator|alligator|noun|animals
+das Krokodil|crocodile|noun|animals
+das Delfin|dolphin|noun|animals
+das Walross|walrus|noun|animals
+der Vogel|bird|noun|animals
+der Adler|eagle|noun|animals
+die Fledermaus|bat|noun|animals
+die Huhn|chicken|noun|animals
+die Eule|owl|noun|animals
+die Taube|pigeon|noun|animals
+der Affe|ape|noun|animals
+der Schimpanse|chimpanzee|noun|animals
+der Gorilla|gorilla|noun|animals
+der Elefant|elephant|noun|animals
+das Pferd|horse|noun|animals
+der Fuchs|fox|noun|animals
+der Esel|donkey|noun|animals
+die Ziege|goat|noun|animals
+der Pfau|peacock|noun|animals
+die Schlange|snake|noun|animals
+das Känguru|kangaroo|noun|animals
+# weather nouns
+der Regentag|rainy day|noun|weather
+der Regentropfen|rain drop|noun|weather
+der Gewitter|thunderstorm|noun|weather
+der Donner|thunder|noun|weather
+der Blitz|lightning|noun|weather
+der Sturm|storm|noun|weather
+der Regenbogen|rainbow|noun|weather
+der Regenschirm|umbrella|noun|weather
+der Regenmantel|rain coat|noun|weather
+der Orkan|hurricane|noun|weather
+der Schnee|snow|noun|weather
+das Eis|ice|noun|weather
+der Nebel|fog|noun|weather
+der Sonnenschein|sunshine|noun|weather
+die Temperatur|temperature|noun|weather
+die Wettervorhersage|weather forecast|noun|weather
+# art nouns
+die Kunst|art|noun|art
+der Künstler|artist|noun|art
+der Maler|painter|noun|art
+der Atelier|studio|noun|art
+die Ausstellung|exhibition|noun|art
+die Landschaft|landscape|noun|art
+das Gemälde|painting|noun|art
+das Papier|paper|noun|art
+der Pinsel|paintbrush|noun|art
+der Bleistift|pencil|noun|art
+die Farbe|colour|noun|art
+die Bildhauerei|sculpture|noun|art
+die Wasserfarbe|watercolour|noun|art
+die Metapher|metaphor|noun|art
+die Bedeutung|meaning|noun|art
+die Ähnlichkeit|likeness|noun|art
+# kitchen nouns
+die Spülmaschine|dishwasher|noun|kitchen
+der Tiefkühlschrank|freezer|noun|kitchen
+die Mikrowelle|microwave|noun|kitchen
+der Kühlschrank|refrigerator|noun|kitchen
+die Spüle|sink|noun|kitchen
+der Mixer|blender|noun|kitchen
+# nature nouns
+die Natur|nature|noun|nature
+die Höhle|cave|noun|nature
+der Wald|forest|noun|nature
+die Pflanze|plant|noun|nature
+der Baum|tree|noun|nature
+das Blatt|leaf|noun|nature
+das Gras|grass|noun|nature
+der Pilz|mushroom|noun|nature
+das Feld|field|noun|nature
+der Berg|mountain|noun|nature
+die Felsen|rocks|noun|nature
+der Hügel|hill|noun|nature
+das Tal|valley|noun|nature
+der Bach|creek|noun|nature
+der Sumpf|swamp|noun|nature
+der Fluss|river|noun|nature
+das Meer|sea|noun|nature
+die Welle|wave|noun|nature
+die Küste|coast|noun|nature
+die Insel|island|noun|nature
+der Strand|beach|noun|nature
+die Pfütze|puddle|noun|nature
+# nouns
+die Zeit|time|noun
+die Vergangenheit|past|noun
+die Gegenwart|present|noun
+die Zukunft|future|noun
+die Zeitreise|time travel|noun
+der Elternteil|parent|noun
+der Fremder|stranger|noun
+die Polizei|police|noun
+der Brief|letter|noun
+das Zeitpunkt|date|noun
+das Gefühl|feeling|noun
+der Aufbau|building|noun
+die Wissenschaft|science|noun
+der Fähigkeit|ability|noun
+der Krieg|war|noun
+die Ewigkeit|eternity|noun
+die Geschichte|story|noun
+das Wissen|knowledge|noun
+das Wolfsruddel|wolf pack|noun
+die Dunkelkeit|darkness|noun
+der Ursprung|origin|noun
+der Kleiderschrank|closet|noun
+die Klamotten|clothes|noun
+der Kleiderbügel|hanger|noun
+die Überbevölkerung|overpopulation|noun
+die Wachstum|growth|noun
+das Gleichgewicht|balance|noun
+der Schatten|shadow|noun
+die Erwartung|expectation|noun
+der Erfolgsmoment|successful moment|noun
+das Ziel|objective|noun
+die Bedeutungslosigkeit|insignificance|noun
+der Geldbeutel|wallet|noun
+der Pulli|sweater|noun|closet
+der Schmuck|jewelry|noun
+der Müll|garbage|noun
+die Erfindung|invention|noun
+der Ablauf|expiry|noun
+das Urteil|judgement|noun
+die Steinzeit|stone age|noun
+der Stoff|substance|noun
+das Gehirn|brain|noun
+die Wirkung|effect|noun
+der Schluss|end|noun
+die Dusche|shower|noun
+das Treppenhaus|staircase|noun
+das Ding|thing|noun
+der Knast|prison|noun
+der Zuschauer|viewer|noun
+# adjectives
 heiß|hot|adjective
 kalt|cold|adjective
 höflich|polite|adjective
@@ -6,13 +146,118 @@ niedlich|cute|adjective
 teuer|expensive|adjective
 billig|cheap|adjective
 breit|wide|adjective
+bunt|colourful|adjective
+dunkel|dark|adjective
+hell|light|adjective
+schön|beautiful|adjective
+künstlersich|artistic|adjective
+dumm|stupid|adjective
+faul|lazy|adjective
+gemein|mean|adjective
+freundlich|kind|adjective
+gesund|healthy|adjective
+krank|ill|adjective
+humorvoll|funny|adjective
+langweilig|boring|adjective
+schnell|fast|adjective
+langsam|slow|adjective
+leer|empty|adjective
+voll|full|adjective
+ruhig|calm|adjective
+stark|strong|adjective
+laut|loud|adjective
+leise|quiet|adjective
+tot|dead|adjective
+spät|late|adjective
+groß|big|adjective
+klein|small|adjective
+welch|soft|adjective
+nass|wet|adjective
+feucht|humid|adjective
+kühl|chilly|adjective
+ergiebig|productive|adjective
+rauh|rough|adjective
+emsig|busy|adjective
+begrenzt|limited|adjective
+bewölkt|cloudy|adjective
+regnerisch|rainy|adjective
+sonnig|sunny|adjective
+windig|windy|adjective
+sternenklar|starry|adjective
+aufrichtig|straightforward|adjective
+großzügig|generous|adjective
+hilfsbereit|helpful|adjective
+kultiviert|cultured|adjective
+sensibel|sensitive|adjective
+wohnunglos|homeless|adjective
+heimlich|secret|adjective
+gruselig|scary|adjective
+ewig|eternal|adjective
+kaputt|broken|adjective
+nah|near|adjective
+bequem|comfortable|adjective
+beliebt|popular|adjective
+schüchten|shy|adjective
+lerneifrig|studious|adjective
+durschnittlich|average|adjective
+glaublich|credible|adjective
+sorgfältig|careful|adjective
+ursprünglich|original|adjective
+# colour adjectives
+weiß|white|adjective|colour
+gelb|yellow|adjective|colour
+rot|red|adjective|colour
+pink|pink|adjective|colour
+blau|blue|adjective|colour
+grün|green|adjective|colour
+schwarz|black|adjective|colour
+# verbs
 essen|to eat|verb
 trinken|to drink|verb
 spielen|to play|verb
 treffen|to meet|verb
 vergessen|to forget|verb
 feiern|to celebrate|verb
+fotografieren|to photograph|verb
+malen|to paint|verb
+zeichnen|to draw|verb
+regnen|to rain|verb
+sein|to be|verb
+haben|to have|verb
+gehen|to go|verb
+laufen|to walk|verb
+rennen|to run|verb
+fahren|to drive|verb
+reisen|to travel|verb
+stehen|to stand|verb
+sitzen|to sit|verb
+kochen|to cook|verb
+hören|to hear|verb
+zuhören|to listen|verb
+kennen|to know (a person)|verb
+wissen|to know (a concept)|verb
+denken|to think|verb
+glauben|to believe|verb
+wollen|to want|verb
+brauchen|to need|verb
+lesen|to read|verb
+lernen|to study|verb
+verstehen|to understand|verb
+üben|to practice|verb
+arbeiten|to work|verb
+kaufen|to buy|verb
+bekommen|to receive|verb
+nehmen|to take|verb
+schauen|to look|verb
+finden|to find|verb
+versuchen|to try|verb
+wohnen|to live|verb
+anfangen|to start|verb
+sterben|to die|verb
+zurückkommen|to return|verb
+# conjunctions
 aber|but|conjunction
 oder|or|conjunction
 und|and|conjunction
 wo|where|conjunction
+# adverbs
