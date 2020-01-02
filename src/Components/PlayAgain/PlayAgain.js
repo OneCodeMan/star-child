@@ -1,7 +1,7 @@
 import React from 'react';
-import './GameOver.css';
+import './PlayAgain.css';
 
-const GameOver = ({ handlePlayAgainClick, disablePlayButton }) => (
+const PlayAgain = ({ handlePlayAgainClick, disablePlayButton }) => (
   <div className="game-over-container">
     <button
       className="play-again-button"
@@ -13,4 +13,4 @@ const GameOver = ({ handlePlayAgainClick, disablePlayButton }) => (
   </div>
 );
 
-export default GameOver;
+export default PlayAgain;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Main.css';
 
 import Board from '../Board/Board';
-import GameOver from '../GameOver/GameOver';
+import PlayAgain from '../PlayAgain/PlayAgain';
 import GameSettings from '../GameSettings/GameSettings';
 import generateWords from '../../Helpers/WordGeneration';
 
@@ -26,7 +26,7 @@ function Main() {
   const [solvedAnim, setSolvedAnim] = useState([]);
   const [wrongPairAnim, setWrongPairAnim] = useState([]);
 
-  const [gameOver, setGameOver] = useState(false);
+  const [playAgain, setPlayAgain] = useState(false);
   const [disablePlayButton, setDisablePlayButton] = useState(true);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ function Main() {
         setSolvedAnim([selected[0], id]);
         setTimeout(solveAnimation, 1000);
         resetWords();
-        setTimeout(checkGameOver, 1500);
+        setTimeout(checkPlayAgain, 1500);
       } else {
         setWrongPairAnim([selected[0], id]);
         setTimeout(wrongPairAnimation, 1000);
@@ -92,11 +92,11 @@ function Main() {
     return secondWord.translationId === firstWord.translationId;
   };
 
-  const checkGameOver = () => {
+  const checkPlayAgain = () => {
     // for some reason, solved's length isn't equal to words when you check.
     // is it bc of hooks asynchronicity?
     if (solved.length === (words.length - 2)) {
-      setGameOver(true);
+      setPlayAgain(true);
       setTimeout(resetGame, 1000);
     };
   };
@@ -108,7 +108,7 @@ function Main() {
   };
 
   const handlePlayAgainClick = () => {
-    setGameOver(false);
+    setPlayAgain(false);
     setWords(generateWords(numWords));
   };
 
@@ -126,7 +126,7 @@ function Main() {
     <div className="Main">
       <h2>Test Your German</h2>
       {
-        !gameOver ?
+        !playAgain ?
         <Board
           dimension={dimension}
           words={words}
@@ -143,7 +143,7 @@ function Main() {
             handleSizeSelection={handleSizeSelection}
             handleTypeSelection={handleTypeSelection}
           />
-          <GameOver
+          <PlayAgain
             handlePlayAgainClick={handlePlayAgainClick}
             disablePlayButton={disablePlayButton}
           />
