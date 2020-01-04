@@ -137,6 +137,14 @@ das Treppenhaus|staircase|noun
 das Ding|thing|noun
 der Knast|prison|noun
 der Zuschauer|viewer|noun
+der Herzschlag|heartbeat|noun
+die Träne|teardrop|noun
+der Blitzschlag|lightning|noun
+der Zweifel|doubt|noun
+der Verstand|realization|noun
+der Schlag|shock|noun
+die Kanalisation|sewer system|noun
+die Irrenanstalt|lunatic asylum|noun
 # adjectives
 heiß|hot|adjective
 kalt|cold|adjective
@@ -203,6 +211,8 @@ durschnittlich|average|adjective
 glaublich|credible|adjective
 sorgfältig|careful|adjective
 ursprünglich|original|adjective
+ohnmächtig|helpless|adjective
+heilig|sacred|adjective
 # colour adjectives
 weiß|white|adjective|colour
 gelb|yellow|adjective|colour
@@ -255,6 +265,9 @@ wohnen|to live|verb
 anfangen|to start|verb
 sterben|to die|verb
 zurückkommen|to return|verb
+blinzeln|to blink|verb
+freiern|to freeze|verb
+klopfen|to knock|verb
 # conjunctions
 aber|but|conjunction
 oder|or|conjunction
