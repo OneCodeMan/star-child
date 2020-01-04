@@ -35,3 +35,4 @@ for word_raw in content:
 
 with open(json_filename, 'w', encoding='utf8') as json_file:
     json.dump(json_words, json_file, ensure_ascii=False)
+    print("Success")
